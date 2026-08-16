@@ -1,0 +1,43 @@
+name: Build
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    container:
+      image: ghcr.io/euclidvsgauss/revenge:latest
+      
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Ninja Build
+        run: |
+          cd ${GITHUB_WORKSPACE}
+          python3 /workspace/generate_ninja.py
+
+      - name: Build with MSVC6
+        run: |
+          cd ${GITHUB_WORKSPACE}
+          ninja -f build.msvc6.ninja
+
+      - name: Rename symbols
+        run: |
+          cd ${GITHUB_WORKSPACE}
+          /workspace/rename_symbols.sh build_msvc6/ /workspace/targetData/ objcopy
+
+      - name: Build objdiff.json
+        run: |
+          cd ${GITHUB_WORKSPACE}
+          python3 /workspace/pipeline_objdiff.py build_msvc6/ /workspace/targetData/ -o objdiff.json
+
+      - name: Generate report
+        run: objdiff-cli report generate -o report.json
+
+      - name: Upload report
+        uses: actions/upload-artifact@v4
+        with:
+          name: HazardEnglish_report
+          path: report.json

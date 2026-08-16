@@ -1,0 +1,5 @@
+#ifndef WIN32_TO_SDL_DDRAW_H
+#define WIN32_TO_SDL_DDRAW_H
+
+
+#endif // WIN32_TO_SDL_DDRAW_H

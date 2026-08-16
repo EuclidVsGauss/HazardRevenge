@@ -1,0 +1,10 @@
+extern char s_stand1[];
+extern char s_stand2[];
+extern char s_stand3[];
+extern char s_stand4[];
+extern char s_attack1[];
+extern char s_attack2[];
+extern char s_attack3[];
+extern char s_change1[];
+extern char s_change2[];
+extern char s_change3[];
