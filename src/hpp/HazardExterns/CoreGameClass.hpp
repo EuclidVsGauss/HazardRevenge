@@ -1,0 +1,29 @@
+#include "HazardStructs/ItemRawCollection.hpp"
+
+extern char* CharacterNames[10];
+extern int32_t ScreenshotCounter;
+extern char ScreenshotFilename[24];
+extern char CurrentSceneName[16];
+extern ItemRawCollection* RawItemCollection62k;
+extern char s_item00_txt[];
+extern char s__s__d[];
+extern char s_item00_error[];
+extern char s___d[];
+extern char s_item00_act[];
+extern char s_haz__d_bmp[];
+extern char s_Error_in_cFRAME[];
+extern char s_Wrong_Command[];
+extern char s_win8_act[];
+extern char s_go[];
+extern char s_dongo[];
+extern char s_attack[];
+extern char s_ctrl[];
+extern char s_board[];
+extern char s_get[];
+extern char s_open[];
+extern char s_talk[];
+extern char s_outofsight[];
+extern char s_warp[];
+extern char s_step[];
+extern int32_t FlagCursorRelated;
+extern float Fixed0;

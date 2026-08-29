@@ -1,0 +1,9 @@
+extern char s__[];
+extern char s_wina_act[];
+extern char s_name[];
+extern char s_lv[];
+extern char s_number1[];
+extern char s_hp1[];
+extern char s_hp2[];
+extern char s_mp1[];
+extern char s_mp2[];
