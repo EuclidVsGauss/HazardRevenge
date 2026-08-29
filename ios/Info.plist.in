@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+    <key>UIApplicationSupportsIndirectInputEvents</key>
+    <true/>
+
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Audio recording for game</string>
+
+    <key>UIFileSharingEnabled</key>
+    <true/>
+    <key>LSSupportsOpeningDocumentsInPlace</key>
+    <true/>
+
+    <!-- ── Identity ──────────────────────────────────────────────────── -->
+
+    <key>CFBundleExecutable</key>
+    <string>@MACOSX_BUNDLE_EXECUTABLE_NAME@</string>
+
+    <key>CFBundleIdentifier</key>
+    <string>@MACOSX_BUNDLE_GUI_IDENTIFIER@</string>
+
+    <key>CFBundleName</key>
+    <string>@MACOSX_BUNDLE_BUNDLE_NAME@</string>
+
+    <key>CFBundleDisplayName</key>
+    <string>@MACOSX_BUNDLE_BUNDLE_NAME@</string>
+
+    <key>CFBundleVersion</key>
+    <string>@MACOSX_BUNDLE_BUNDLE_VERSION@</string>
+
+    <key>CFBundleShortVersionString</key>
+    <string>@MACOSX_BUNDLE_SHORT_VERSION_STRING@</string>
+
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+
+    <key>CFBundleDevelopmentRegion</key>
+    <string>en</string>
+
+    <!-- ── Minimum OS ────────────────────────────────────────────────── -->
+
+    <key>MinimumOSVersion</key>
+    <string>@CMAKE_OSX_DEPLOYMENT_TARGET@</string>
+
+    <!-- ── Device support ────────────────────────────────────────────── -->
+
+    <key>UIDeviceFamily</key>
+    <array>
+        <integer>1</integer>
+        <integer>2</integer>
+    </array>
+
+    <key>UIRequiredDeviceCapabilities</key>
+    <array>
+        <string>arm64</string>
+        <string>metal</string>
+    </array>
+
+    <!-- ── Launch screen ─────────────────────────────────────────────── -->
+
+    <key>UILaunchScreen</key>
+    <dict/>
+
+    <!-- ── Orientation ───────────────────────────────────────────────── -->
+
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+
+    <key>UISupportedInterfaceOrientations~ipad</key>
+    <array>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+
+    <!-- ── Status bar & full screen ──────────────────────────────────── -->
+
+    <key>UIStatusBarHidden</key>
+    <true/>
+
+    <key>UIViewControllerBasedStatusBarAppearance</key>
+    <false/>
+
+    <key>UIRequiresFullScreen</key>
+    <true/>
+
+</dict>
+</plist>
